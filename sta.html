@@ -1,0 +1,106 @@
+<body bgcolor="black" style="margin:0">
+<meta name="theme-color" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="referrer" content="never">
+<meta name="referrer" content="no-referrer">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<script src="//cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/level-selector@latest/dist/level-selector.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-chromecast-plugin@latest/dist/clappr-chromecast-plugin.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-pip@latest/dist/clappr-pip.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/dash-shaka-playback@latest/dist/dash-shaka-playback.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/p2p-media-loader-core@latest/build/p2p-media-loader-core.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/p2p-media-loader-hlsjs@latest/build/p2p-media-loader-hlsjs.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/clappr-playback-rate-plugin@latest/dist/clappr-playback-rate-plugin.min.js"></script>
+<div id="vipplayer"></div>
+<script>
+var _0xac56 = ["referrer", "diexsport.ml", "indexOf", "userAgent", "test", "isSupported", "Engine", "hlsjs", "https://live-ftc-na-south-2.media.starott.com/clt2/va01/starplus/event/2022/09/29/Gois_vs_Botafogo_20220929_1664406606016/ctr-all-sliding.m3u8?v=1&hash=9a23eea726b7018562543c163245acaa1a5081e9", "#vipplayer", "application/dash+xml", "PipButton", "PipPlugin", "MediaControl", "click_to_pause", "getPlugin", "disable", "100%", "4e845ece80d1ffda34952a124c947096", "1.00x", "0.10", "0.10x", "0.25", "0.25x", "0.50", "0.50x", "0.75", "0.75x", "1.00", "1.25", "1.25x", "1.50", "1.50x", "1.75", "1.75x", "2.00", "2.00x", "(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();", "|", "split", "||i|function|debugger|20|length|if|try|constructor|||else|catch||100|setTimeout", "replace", "", "\\w+", "\\b", "g", "oncontextmenu"];
+var referrer = document[_0xac56[0]];
+if ((referrer[_0xac56[2]](_0xac56[1]) > -1) || /iPad|iPod|BlackBerry|IEMobile|webOS|Opera Mini/i [_0xac56[4]](navigator[_0xac56[3]])) {
+    if (p2pml[_0xac56[7]][_0xac56[6]][_0xac56[5]]()) {
+        var engine = new p2pml[_0xac56[7]].Engine();
+        var str = _0xac56[8];
+        var player = new Clappr.Player({
+            parentId: _0xac56[9],
+            mimeType: _0xac56[10],
+            source: str,
+            plugins: [LevelSelector, ChromecastPlugin, ClapprPip[_0xac56[11]], ClapprPip[_0xac56[12]], DashShakaPlayback, Clappr[_0xac56[13]], PlaybackRatePlugin],
+            events: {
+                onReady: function () {
+                    var _0x6d59x5 = this[_0xac56[15]](_0xac56[14]);
+                    _0x6d59x5 && _0x6d59x5[_0xac56[16]]()
+                }
+            },
+            width: _0xac56[17],
+            height: _0xac56[17],
+            autoPlay: false,
+            shakaConfiguration: {
+                drm: {
+                    clearKeys: {
+                        'ab6a3f385ee646b9b25bb4aa3cbb2c78': _0xac56[18]
+                    }
+                }
+            },
+            playbackRateConfig: {
+                defaultValue: _0xac56[19],
+                options: [{
+                    value: _0xac56[20],
+                    label: _0xac56[21]
+                }, {
+                    value: _0xac56[22],
+                    label: _0xac56[23]
+                }, {
+                    value: _0xac56[24],
+                    label: _0xac56[25]
+                }, {
+                    value: _0xac56[26],
+                    label: _0xac56[27]
+                }, {
+                    value: _0xac56[28],
+                    label: _0xac56[19]
+                }, {
+                    value: _0xac56[29],
+                    label: _0xac56[30]
+                }, {
+                    value: _0xac56[31],
+                    label: _0xac56[32]
+                }, {
+                    value: _0xac56[33],
+                    label: _0xac56[34]
+                }, {
+                    value: _0xac56[35],
+                    label: _0xac56[36]
+                }]
+            }
+        })
+    }
+};
+eval(function (_0x6d59x6, _0x6d59x7, _0x6d59x8, _0x6d59x9, _0x6d59xa, _0x6d59xb) {
+    _0x6d59xa = function (_0x6d59x8) {
+        return _0x6d59x8.toString(36)
+    };
+    if (!_0xac56[42][_0xac56[41]](/^/, String)) {
+        while (_0x6d59x8--) {
+            _0x6d59xb[_0x6d59x8.toString(_0x6d59x7)] = _0x6d59x9[_0x6d59x8] || _0x6d59x8.toString(_0x6d59x7)
+        };
+        _0x6d59x9 = [function (_0x6d59xa) {
+            return _0x6d59xb[_0x6d59xa]
+        }];
+        _0x6d59xa = function () {
+            return _0xac56[43]
+        };
+        _0x6d59x8 = 1
+    };
+    while (_0x6d59x8--) {
+        if (_0x6d59x9[_0x6d59x8]) {
+            _0x6d59x6 = _0x6d59x6[_0xac56[41]](new RegExp(_0xac56[44] + _0x6d59xa(_0x6d59x8) + _0xac56[44], _0xac56[45]), _0x6d59x9[_0x6d59x8])
+        }
+    };
+    return _0x6d59x6
+}(_0xac56[37], 17, 17, _0xac56[40][_0xac56[39]](_0xac56[38]), 0, {}));
+document[_0xac56[46]] = function () {
+    return false
+}
+</script>
+
+</body>
