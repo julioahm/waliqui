@@ -6,7 +6,7 @@ document.writeln("playerInstance.setup({");
 document.writeln("    playlist: [{");
 document.writeln("            \"title\": \"Reproductor | Ultra Deportes\",");
 document.writeln("            \"description\": \"Mirar DAZN de manera gratuita\",");
-document.writeln("            \"image\": \"\",");
+document.writeln("            \"image\": \"https://img.youtube.com/vi/cmKLg2iHMfA/maxresdefault.jpg\",");
 document.writeln("            \"sources\": [");
 document.writeln("                {");
 document.writeln("          \"default\": false,");
