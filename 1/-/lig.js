@@ -11,7 +11,7 @@ document.writeln("            \"sources\": [");
 document.writeln("                {");
 document.writeln("                    \"default\": false,");
 document.writeln("                    \"type\": \"dash\",");
-document.writeln("                    \"file\": 'https://mixtex.herokuapp.com/radio/?q=https://mligacampeones-dash-movistarplus.emisiondof6.com/dash/mligacampeones.isml/manifest.mpd',");
+document.writeln("                    \"file\": 'https://crytonep.herokuapp.com/https://mligacampeones-dash-movistarplus.emisiondof6.com/dash/mligacampeones.isml/manifest.mpd',");
 document.writeln("                    \"drm\": {");
 document.writeln("                        \"clearkey\": { \"keyId\": \"0d35a933a80c48bc98f17906ee83a56d\", \"key\": \"6461b4d5866add924b6cadc2cf59ce84\" }");
 document.writeln("                    },");
