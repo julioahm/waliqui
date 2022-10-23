@@ -11,7 +11,7 @@ document.writeln("            \"sources\": [");
 document.writeln("                {");
 document.writeln("                    \"default\": false,");
 document.writeln("                    \"type\": \"hls\",");
-document.writeln("                    \"file\": 'https://hls.goodgame.ru/manifest/196630_master.m3u8',");
+document.writeln("                    \"file\": '//live.autistici.org/hls/mylive.m3u8',");
 document.writeln("                    \"label\": \"0\"");
 document.writeln("                }");
 document.writeln("            ]");
