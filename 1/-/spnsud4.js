@@ -6,7 +6,7 @@ document.writeln("    playerInstance.setup({");
 document.writeln("        playlist: [{");
 document.writeln("            \"title\": \"Reproductor | Diex Sport\",");
 document.writeln("            \"description\": \"Mirar ESPN 4 de manera gratuita\",");
-document.writeln("            \"image\": \"https://img.youtube.com/vi/hsotw7TnyNw/maxresdefault.jpg\",");
+document.writeln("            \"image\": \"https://img.youtube.com/vi/A0J9dzFOplk/maxresdefault.jpg\",");
 document.writeln("            \"sources\": [");
 document.writeln("                {");
 document.writeln("                    \"default\": false,");
