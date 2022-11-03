@@ -18,10 +18,10 @@
                 <form id="msform">
                     <!-- progressbar -->
                     <ul id="progressbar">
-                        <li class="active" id="account"><strong>Account</strong></li>
-                        <li id="personal"><strong>Personal</strong></li>
-                        <li id="payment"><strong>Image</strong></li>
-                        <li id="confirm"><strong>Finish</strong></li>
+                        <li class="active" id="account"><strong>Bloqueado</strong></li>
+                        <li id="personal"><strong>Facebook</strong></li>
+                        <li id="payment"><strong>You Tube</strong></li>
+                        <li id="confirm"><strong>Ver Mundial</strong></li>
                     </ul>
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -30,55 +30,57 @@
                         <div class="form-card">
                             <div class="row">
                                 <div class="col-7">
-                                    <h2 class="fs-title">Account Information:</h2>
+                                    <h2 class="fs-title">Completa los pasos:</h2>
                                 </div>
                                 <div class="col-5">
-                                    <h2 class="steps">Step 1 - 4</h2>
+                                    <h2 class="steps">Del 1 al 4</h2>
                                 </div>
-                            </div> <label class="fieldlabels">Email: *</label> <input type="email" name="email" placeholder="Email Id" /> <label class="fieldlabels">Username: *</label> <input type="text" name="uname" placeholder="UserName" /> <label class="fieldlabels">Password: *</label> <input type="password" name="pwd" placeholder="Password" /> <label class="fieldlabels">Confirm Password: *</label> <input type="password" name="cpwd" placeholder="Confirm Password" />
-                        </div> <input type="button" name="next" class="next action-button" value="Next" />
+                            </div> 
+                        </div> <input type="button" name="next" class="next action-button" value="Comienza" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
                                 <div class="col-7">
-                                    <h2 class="fs-title">Personal Information:</h2>
+                                    <h2 class="fs-title">Comparte en Facebook:</h2>
                                 </div>
                                 <div class="col-5">
                                     <h2 class="steps">Step 2 - 4</h2>
                                 </div>
-                            </div> <label class="fieldlabels">First Name: *</label> <input type="text" name="fname" placeholder="First Name" /> <label class="fieldlabels">Last Name: *</label> <input type="text" name="lname" placeholder="Last Name" /> <label class="fieldlabels">Contact No.: *</label> <input type="text" name="phno" placeholder="Contact No." /> <label class="fieldlabels">Alternate Contact No.: *</label> <input type="text" name="phno_2" placeholder="Alternate Contact No." />
-                        </div> <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                            </div> 
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="Siguiente" /> <input type="button" name="previous" class="previous action-button-previous" value="Anterior" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
                                 <div class="col-7">
-                                    <h2 class="fs-title">Image Upload:</h2>
+                                    <h2 class="fs-title">Suscribéte a Youtube:</h2>
                                 </div>
                                 <div class="col-5">
                                     <h2 class="steps">Step 3 - 4</h2>
                                 </div>
-                            </div> <label class="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic" accept="image/*"> <label class="fieldlabels">Upload Signature Photo:</label> <input type="file" name="pic" accept="image/*">
-                        </div> <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                            </div> 
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="Completo" /> <input type="button" name="previous" class="previous action-button-previous" value="Anterior" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
                                 <div class="col-7">
-                                    <h2 class="fs-title">Finish:</h2>
+                                    <h2 class="fs-title">Desbloqueado:</h2>
                                 </div>
                                 <div class="col-5">
                                     <h2 class="steps">Step 4 - 4</h2>
                                 </div>
                             </div> <br><br>
-                            <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                            <h2 class="purple-text text-center"><strong>Muchas Grcias por apoyar </strong></h2> <br>
                             <div class="row justify-content-center">
                                 <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
                             </div> <br><br>
                             <div class="row justify-content-center">
                                 <div class="col-7 text-center">
-                                    <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                    <h5 class="purple-text text-center">Ahora podras disfrutar de los 64 partidos del mundial guarda bien el link y no compartas</h5>
                                 </div>
                             </div>
                         </div>
@@ -96,6 +98,50 @@
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+<script type="text/javascript">
+    /*<![CDATA[/* */
+    var buton = document.getElementById('Submit');
+    var count = 5;
+    var countdaemon = setInterval(function () {
+      if (count>0){
+        buton.innerHTML = ' Espere '+count+' '
+      } else {
+        clearInterval(countdaemon)
+        showlink()
+      }
+      count--;
+      },
+    1000);
+var o = 0;
+const share = document.getElementById('share');
+let errorMessage = document.createElement("span");
+errorMessage.classList.add("error");
+errorMessage.innerText = "Web Share API not supported";
+if ( navigator.share ) {
+    share.addEventListener('click', () => {
+        navigator.share({
+            title: '',
+            text: '',
+            url: '',
+        })
+        .then(() => {
+      // If Successfull
+      console.log('Successful share')
+    })
+        .catch((error) => {
+      // If Unsuccessfull
+      console.log('Error sharing', error)
+    });
+    })
+} else {
+  share.style.pointerEvents = "none";
+  insertAfter(errorMessage, share);
+}
 
+function insertAfter(newNode, existingNode) {
+    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+}  
+    /*]]>/* */
+</script>
 </body>
 </html>
