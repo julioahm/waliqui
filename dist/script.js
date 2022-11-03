@@ -132,7 +132,7 @@ function base64_decode (data) {
   return dec;
 }
     function showlink(){
-       var urldes = base64_decode(document.location.href.match(/p\/\?(.+)\/?/)[1]);
+       var urldes = base64_decode(document.location.href.match(/dist\/\?(.+)\/?/)[1]);
        buton.innerHTML = 'VER MAS CANALES';
        buton.onclick = function (){
          location.href = urldes;
