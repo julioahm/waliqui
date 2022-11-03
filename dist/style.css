@@ -219,3 +219,85 @@ p {
     width: 100%;
     object-fit: cover
 }
+
+/*-------- 3.2 Buttons --------*/
+a.btn_1,
+.btn_1 {
+border: none;
+background: #48ae69;
+outline: none;
+cursor: pointer;
+display: inline-block;
+text-decoration: none;
+padding: 10px 20px;
+color: #fff;
+font-weight: 600;
+text-align: center;
+font-size: 14px;
+font-size: 0.875rem;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+border-radius: 3px;
+line-height: normal;
+}
+a.btn_1:focus,
+.btn_1:focus {
+outline: none;
+}
+a.btn_1:hover,
+.btn_1:hover {
+background: #292929;
+}
+a.btn_1.full-width,
+.btn_1.full-width {
+display: block;
+width: 100%;
+text-align: center;
+}
+a.btn_1.full-width.booking,
+.btn_1.full-width.booking {
+padding: 10px 0px;
+background-color: #0b8043;
+}
+a.btn_1.full-width.booking:hover,
+.btn_1.full-width.booking:hover {
+background-color: #292929;
+}
+/*-------- 3.3 Misc --------*/
+.box_general {
+background-color: #fff;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+border-radius: 5px;
+overflow: hidden;
+margin-bottom: 25px;
+-webkit-box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.box_general.padding {
+padding: 10px;
+}
+
+.play {
+  position: relative;
+  height: 0;
+  margin: 0px 0;
+  padding: 0px 0 56.25% 0; 
+  overflow: hidden;
+}
+
+.play iframe, .ag object, .ag embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

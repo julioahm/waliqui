@@ -13,15 +13,16 @@
     <div class="row justify-content-center">
         <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
             <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
-                <h2 id="heading">Sign Up Your User Account</h2>
-                <p>Fill all form field to go to next step</p>
+                <h2 id="heading">CONTENIDO BLOQUEADO</h2>
+                <h5 id="heading">Para Debloquear</h5>
+                <p>Completa los pasos ( ver video Tutorial )</p>
                 <form id="msform">
                     <!-- progressbar -->
                     <ul id="progressbar">
                         <li class="active" id="account"><strong>Bloqueado</strong></li>
                         <li id="personal"><strong>Facebook</strong></li>
-                        <li id="payment"><strong>You Tube</strong></li>
-                        <li id="confirm"><strong>Ver Mundial</strong></li>
+                        <li id="payment"><strong>YouTube</strong></li>
+                        <li id="confirm"><strong>Ver TV</strong></li>
                     </ul>
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -35,8 +36,12 @@
                                 <div class="col-5">
                                     <h2 class="steps">Del 1 al 4</h2>
                                 </div>
-                            </div> 
-                        </div> <input type="button" name="next" class="next action-button" value="Comienza" />
+                            </div>
+                                               <div class="play">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/F7y533qFFN4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                      </div>    
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="Comienza" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
@@ -45,24 +50,27 @@
                                     <h2 class="fs-title">Comparte en Facebook:</h2>
                                 </div>
                                 <div class="col-5">
-                                    <h2 class="steps">Step 2 - 4</h2>
+                                    <h2 class="steps">Paso 2 - 4</h2>
                                 </div>
                             </div> 
                         </div> 
-                        <input type="button" name="next" class="next action-button" value="Siguiente" /> <input type="button" name="previous" class="previous action-button-previous" value="Anterior" />
+                        <input type="button" name="next" class="next action-button" id="share" value="Compartir"/> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Volver" />
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
                             <div class="row">
                                 <div class="col-7">
-                                    <h2 class="fs-title">Suscribéte a Youtube:</h2>
+                                    <h2 class="fs-title">Suscríbete a Youtube:</h2>
                                 </div>
                                 <div class="col-5">
-                                    <h2 class="steps">Step 3 - 4</h2>
+                                    <h2 class="steps">Paso 3 - 4</h2>
                                 </div>
                             </div> 
                         </div> 
-                        <input type="button" name="next" class="next action-button" value="Completo" /> <input type="button" name="previous" class="previous action-button-previous" value="Anterior" />
+                        <input type="button" name="next" class="next action-button" id="ads" value="Suscribirse" /> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Volver" />
+
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
@@ -71,10 +79,10 @@
                                     <h2 class="fs-title">Desbloqueado:</h2>
                                 </div>
                                 <div class="col-5">
-                                    <h2 class="steps">Step 4 - 4</h2>
+                                    <h2 class="steps">Paso 4 - 4</h2>
                                 </div>
                             </div> <br><br>
-                            <h2 class="purple-text text-center"><strong>Muchas Grcias por apoyar </strong></h2> <br>
+                            <h2 class="purple-text text-center"><strong>Muchas Gracias por apoyar</strong></h2> <br>
                             <div class="row justify-content-center">
                                 <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
                             </div> <br><br>
@@ -83,7 +91,11 @@
                                     <h5 class="purple-text text-center">Ahora podras disfrutar de los 64 partidos del mundial guarda bien el link y no compartas</h5>
                                 </div>
                             </div>
+
                         </div>
+                        <div class="">
+<a class="btn_1 full-width booking" id="outlook" href="https://onclickalgo.com/jump/next.php?r=6312062" onclick="window.open('/', '_blank', '');">VER LOS PARTIDOS DEL MUNDIAL</a>
+</div>
                     </fieldset>
                 </form>
             </div>
@@ -100,8 +112,8 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
 <script type="text/javascript">
     /*<![CDATA[/* */
-    var buton = document.getElementById('Submit');
-    var count = 5;
+    var buton = document.getElementById('outlook');
+    var count = 10;
     var countdaemon = setInterval(function () {
       if (count>0){
         buton.innerHTML = ' Espere '+count+' '
@@ -113,6 +125,21 @@
       },
     1000);
 var o = 0;
+document.getElementById('share').disabled = false;
+document.getElementById('ads').disabled = true;
+document.getElementById('share').onclick = function() 
+     {
+
+   document.getElementById('ads').disabled = false;
+     };
+
+
+document.getElementById('ads').onclick = function() 
+     {
+  window.open('https://www.youtube.com/channel/UCrCd8nuvuIc1IcK8oCXSYXw');
+
+     document.getElementById('outlook').disabled = false;
+     };            
 const share = document.getElementById('share');
 let errorMessage = document.createElement("span");
 errorMessage.classList.add("error");
@@ -120,9 +147,9 @@ errorMessage.innerText = "Web Share API not supported";
 if ( navigator.share ) {
     share.addEventListener('click', () => {
         navigator.share({
-            title: '',
-            text: '',
-            url: '',
+            title: 'Puclicidad',
+            text: 'Cursos 24',
+            url: 'https://www.niyazpoyilan.com',
         })
         .then(() => {
       // If Successfull
