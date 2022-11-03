@@ -133,7 +133,7 @@ function base64_decode (data) {
 }
     function showlink(){
        var urldes = base64_decode(document.location.href.match(/dist\/\?(.+)\/?/)[1]);
-       buton.innerHTML = 'VER MAS CANALES';
+       buton.innerHTML = 'VER LOS PARTIDOS DEL MUNDIAL ';
        buton.onclick = function (){
          location.href = urldes;
        }
